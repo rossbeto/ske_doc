@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in $(find src/ -name *.yaml -printf "%f\n"); do
+  ./node_modules/.bin/redoc-cli build --options='{"hideDownloadButton": true}' src/$i -o public/$(echo $i | sed -e 's/yaml/html/g');
+done

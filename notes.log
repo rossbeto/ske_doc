@@ -1,0 +1,30 @@
+
+npm install --no-optional redoc-cli@0.13.0
+
+# generate redoc html
+for i in \$(find doc/ -name *.yaml|json -printf "%f\n"); do \
+  ./node_modules/.bin/redoc-cli bundle --options='{"hideDownloadButton": true}' doc/\$i -o doc/_build/html/openapi/\$(echo \$i | sed -e 's/yaml/html/g'); \
+done
+
+
+how to execute a script after poetry shell: 
+
+webpack config:
+module.exports = {
+  mode: 'development',
+  devServer: {
+    port: 3000,
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+  }
+};
+
+module.exports = {
+  devServer: {
+    static: { 
+      directory: path.resolve(__dirname, './public'), 
+      publicPath: '/public'
+    }
+  }
+};

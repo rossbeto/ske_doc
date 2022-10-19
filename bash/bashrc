@@ -1,0 +1,3 @@
+. ~/.bashrc
+export PATH="/home/administrator/.local/bin:$PATH"
+PS1="(ske_docs)$PS1"

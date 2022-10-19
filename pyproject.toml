@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ske-docs"
+version = "0.1.0"
+description = "a skeleton project to do documentation"
+authors = ["lalimy"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mkdocs = ">=1.1.2"
+mkdocs-material = ">=5.3.3"
+markdown2 = ">=2.3.9"
+html5lib = ">=1.1"
+beautifulsoup4 = ">=4.9.1"
+markdown-inline-graphviz-extension = ">=1.1"
+click = "^7.0"
+
+[tool.poetry.dev-dependencies]
+
+[settings.virtualenvs.in-project]
+
+[build-system]
+requires = ["poetry>=1.1.2"]
+build-backend = "poetry.masonry.api"

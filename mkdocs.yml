@@ -1,0 +1,24 @@
+site_name: MKDocs in different flavors
+docs_dir: doc
+site_dir: public
+
+nav:
+  - Home: index.md
+  - Mkdocs: mkdocs.md
+  - Api: api.md
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - markdown_inline_graphviz
+  - toc:
+      permalink: true
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+    logo: doc/img/sparrow_black_trans_icon.png
+    favicon: doc/img/sparrow_blackwhite_icon.jpg
